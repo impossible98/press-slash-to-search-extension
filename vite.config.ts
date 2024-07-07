@@ -12,6 +12,7 @@ export default defineConfig({
         namespace: 'impossible98/press-slash-to-search',
         match: [
           'https://search.bilibili.com/*',
+          'https://www.bilibili.com/*',
         ],
         name: 'Press Slash to Search',
         description: 'After pressing slash, you can enter slash to search.',
