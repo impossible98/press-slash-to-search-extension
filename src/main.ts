@@ -9,6 +9,10 @@ function handleSlash() {
   else if (location.href.includes('www.bilibili.com')) {
     handleKeydown('input.nav-search-input');
   }
+    // https://psnine.com/psngame
+    else if (location.href.includes('https://psnine.com/psngame')) {
+      handleKeydown('input.btn-large');
+    }
 }
 
 function main() {
