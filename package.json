@@ -1,7 +1,7 @@
 {
-  "name": "create-monkey-app",
+  "name": "press-slash-to-search-extension",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
