@@ -14,14 +14,15 @@ export default defineConfig({
           'https://search.bilibili.com/*',
           'https://www.bilibili.com/*',
           'https://psnine.com/psngame',
+          'https://www.douyin.com/*',
         ],
         name: 'Press Slash to Search',
         description: 'After pressing slash, you can enter slash to search.',
         author: 'impossible98',
         homepageURL:
-        'https://github.com/impossible98/press-slash-to-search-extension',
-      license: 'MIT',
-      // https://greasyfork.org/en/scripts/499942-press-slash-to-search
+          'https://github.com/impossible98/press-slash-to-search-extension',
+        license: 'MIT',
+        // https://greasyfork.org/en/scripts/499942-press-slash-to-search
       },
     }),
   ],

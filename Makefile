@@ -7,7 +7,7 @@ COLOR_GREEN ?= \033[32;01m
 NODE_VERSION := $(shell node --version | sed 's/^v//')
 YARN_VERSION := $(shell yarn --version | sed 's/^v//')
 # 构建项目
-build: version
+build: version fmt
 	yarn run build
 # 启动开发服务器
 dev:
@@ -15,11 +15,16 @@ dev:
 # 安装环境
 env:
 	asdf install
+# 格式化代码
+fmt:
+	yarn run format
+# 自动修复代码格式
+fix:
+	yarn run format:fix
 # 确保依赖是最新的
 install: version
 ifeq ($(wildcard node_modules),)
-	yarn install --frozen-lockfile; \
-	yarn global add netlify-cli@16.9.3
+	yarn install --frozen-lockfile
 endif
 # 查看提交历史记录
 log:
